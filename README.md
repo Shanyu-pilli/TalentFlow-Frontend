@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# TalentFlow — Frontend (Demo)
+# TalentFlow — Frontend
 
 This repository contains the frontend for a demo HR management dashboard built with React, TypeScript and Vite. It is a self-contained, local-friendly simulation that uses Dexie (IndexedDB) as a local datastore and implements candidate/job/assessment workflows and dashboards for prototyping and UI exploration.
 
@@ -144,4 +144,8 @@ If you want, I can: generate a more detailed developer guide (file-by-file), add
 =======
 # TalentFlow---Next-Gen-Hiring-Dashboard
 Modern hiring management platform with analytics, candidate tracking, and assessment tools
+
+Live-vecel:https://talent-flow-blue.vercel.app/
+Live-Netlify:https://talent-flow-dashboard.netlify.app/
+
 >>>>>>> 28cf5b2f05455a862a9f89bf29efe0a1c89628c3
