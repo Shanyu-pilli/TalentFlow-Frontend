@@ -146,6 +146,7 @@ If you want, I can: generate a more detailed developer guide (file-by-file), add
 Modern hiring management platform with analytics, candidate tracking, and assessment tools
 
 Live-vecel:https://talent-flow-blue.vercel.app/
+========
 Live-Netlify:https://talent-flow-dashboard.netlify.app/
 
->>>>>>> 28cf5b2f05455a862a9f89bf29efe0a1c89628c3
+>>>>>>> 
