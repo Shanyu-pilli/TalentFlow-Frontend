@@ -425,7 +425,7 @@ const Candidates = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h1 className="text-4xl font-bold mb-2">Candidates</h1>
+  <h1 className="text-4xl font-bold mb-2 text-foreground">Candidates</h1>
         <p className="text-muted-foreground">View and manage candidate applications</p>
       </motion.div>
 

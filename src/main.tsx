@@ -5,8 +5,15 @@ import { makeServer } from "./lib/mirage-server";
 import { db } from '@/lib/db';
 import { stripTrailingNumber } from '@/lib/utils';
 
-if (import.meta.env.DEV) {
+// Start the Mirage in-browser mock server for demo deployments as well
+// so the app continues to function when there's no real backend (e.g. Vercel preview).
+// For real production applications you may want to conditionally enable this.
+try {
   makeServer();
+} catch (e) {
+  // If Mirage fails to initialize, ignore and allow errors to surface when APIs are called.
+  // This is intentionally non-fatal for hosting environments where IndexedDB may be restricted.
+  // console.warn('Mirage server failed to initialize', e);
 }
 
 // Normalize job titles in IndexedDB (strip trailing numeric suffixes) so

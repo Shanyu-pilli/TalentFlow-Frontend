@@ -266,7 +266,7 @@ const Jobs = () => {
         className="flex justify-between items-center"
       >
         <div>
-          <h1 className="text-4xl font-bold mb-2">Jobs</h1>
+          <h1 className="text-4xl font-bold mb-2 text-foreground">Jobs</h1>
           <p className="text-muted-foreground">Manage open positions and job listings</p>
         </div>
         <Dialog open={isCreateDialogOpen} onOpenChange={setIsCreateDialogOpen}>
