@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Midnight Teal theme - light mode tokens */
+    --background: 0 0% 100%; /* white */
+    --foreground: 210 18% 12%; /* dark text */
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 18% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 18% 12%;
+
+    --primary: 182 86% 35%; /* #0ea5a4 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 214 32% 91%;
+    --secondary-foreground: 210 18% 12%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 262 83% 58%; /* purple accent */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 182 86% 35%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 18% 12%;
+    --sidebar-primary: 182 86% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 210 18% 12%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 182 86% 35%;
+
+    /* charts (teal, purple, indigo, amber, rose) */
+    --chart-1: 182 86% 35%;
+    --chart-2: 262 83% 58%;
+    --chart-3: 232 62% 48%;
+    --chart-4: 45 100% 50%;
+    --chart-5: 340 82% 52%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(291 64% 42%) 100%);
+  }
+
+  .dark {
+    /* Dark-mode: Futuristic neon palette (only overrides dark values) */
+    --background: 230 12% 6%; /* deep near-black */
+    --foreground: 210 16% 96%; /* bright text */
+
+    --card: 230 12% 10%;
+    --card-foreground: 210 16% 96%;
+
+    --popover: 230 12% 10%;
+    --popover-foreground: 210 16% 96%;
+
+    /* Neon primary and accents for dark mode */
+    --primary: 197 100% 50%; /* electric blue */
+    --primary-foreground: 210 16% 96%;
+
+    --secondary: 270 60% 52%; /* violet */
+    --secondary-foreground: 210 16% 96%;
+
+    --muted: 220 14% 20%;
+    --muted-foreground: 210 12% 72%;
+
+  /* Warm accent: orange-yellow mix for better contrast in dark mode */
+  --accent: 35 100% 55%; /* vibrant orange */
+    --accent-foreground: 210 16% 96%;
+
+    --destructive: 358 100% 60%;
+    --destructive-foreground: 210 16% 96%;
+
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 197 100% 50%;
+
+    --sidebar-background: 230 12% 8%;
+    --sidebar-foreground: 210 16% 96%;
+    --sidebar-primary: 197 100% 50%;
+    --sidebar-primary-foreground: 210 16% 96%;
+    --sidebar-accent: 270 60% 52%;
+    --sidebar-accent-foreground: 210 16% 96%;
+    --sidebar-border: 220 14% 18%;
+    --sidebar-ring: 197 100% 50%;
+
+  /* Neon chart palette tuned for dark backgrounds (warm accents: orange/yellow) */
+  --chart-1: 197 100% 50%;
+  --chart-2: 270 60% 52%;
+  --chart-3: 35 100% 55%; /* orange */
+  --chart-4: 45 100% 50%;
+  --chart-5: 40 100% 60%; /* yellow-amber */
+
+  --gradient-primary: linear-gradient(135deg, hsl(238 57% 50%) 0%, hsl(270 60% 52%) 50%, hsl(35 100% 55%) 100%);
+  --gradient-accent: linear-gradient(90deg, hsl(35 100% 55%), hsl(40 100% 60%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
